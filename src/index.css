@@ -1,0 +1,431 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #6D5CBD;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* 
+  NavBar 
+*/
+
+nav {
+  padding: 16px;
+  background-color: #61dafb;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 12px;
+}
+
+nav ul .authed-user {
+  margin-left: auto;
+}
+
+nav ul li a {
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #6D5CBD;
+}
+
+/*  Connected User */
+
+#connected-user .btn-logout {
+  margin: 0;
+  padding: 4px;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  font-size: 15px;
+  line-height: 26px;
+}
+
+/* 
+  User Info 
+*/
+
+#user-info .user-avatar {
+  width: 35px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+#user-info .user-fullname {
+  margin: 0;
+}
+
+/* 
+  Login Box 
+*/
+
+#login-box {
+  width: 400px;
+  background: #fff;
+  padding: 16px;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+#login-box h2 {
+  text-transform: capitalize;
+  margin: 4px;
+}
+
+#login-box p {
+  color: #6b6868;
+  margin-bottom: 52px;
+}
+
+#login-box a {
+  color: #9A9AA6;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+/* 
+  Poll Card 
+*/
+
+.card-poll {
+  max-width: 1200px;
+  margin: 10px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card-poll .card-header {
+  border-bottom: 1px solid #00000024;
+  padding-bottom: 5px;
+}
+
+.card-poll .card-header .date {
+  margin-left: auto;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.card-poll .card-header span {
+  margin-right: 5px;
+  font-weight: bold;
+  color: #5e4abb;
+}
+
+.card-poll .options {
+  list-style: none;
+  padding-left: 15px;
+}
+
+.card-poll .options li, .card-poll .form-group, .option-progress-bar {
+  border: 1px solid #00000038;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  background-color: #F4F5FF;
+  display: flex;
+  align-items: center;
+}
+
+.card-poll .form-group .form-control {
+  margin-right: 10px;
+  padding: 10px;
+  height: 20px;
+  width: 20px;
+}
+
+.btn-group {
+  border: 1px solid #60dafb;
+  margin-top: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.btn-get-polls {
+  padding: 12px;
+  border: 0;
+  font-weight: bold;
+  color: #fff;
+  background: #6c5cbd;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.btn-get-polls:hover, .btn-get-polls.selected {
+  background-color: #60dafb;
+}
+
+/* 
+  New Question 
+*/
+
+.new-question {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.new-question p {
+  margin-top: 7px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.new-question form {
+  margin-top: 30px;
+}
+
+.new-question form input {
+  background-color: #F4F5FF;
+  border-radius: 5px;
+  padding: 12px;
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid hsl(0, 0%, 80%);
+  margin-bottom: 11px;
+}
+
+.new-question form input:focus {
+  border: 1px solid #6C5CBC;
+}
+
+/*
+  UserBoard
+*/
+
+.user-board li {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 10px;
+  list-style: none;
+  margin: 10px;
+}
+
+.user-board-score {
+  flex-wrap: wrap;
+}
+
+.user-board-score li {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  border: 1px solid hsl(0, 0%, 80%)
+}
+
+.user-board-score li>* {
+  flex-grow: 1;
+}
+
+.user-board-score li .icon svg {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.user-board-score .score .icon svg {
+  background-color: #f3b80726;
+  color: #eab20a;
+}
+
+.user-board-score .answerd-question .icon svg {
+  background-color: #EEF9FE;
+  padding: 11px;
+  color: #48B8FF;
+}
+
+.user-board-score .created-question .icon svg {
+  background-color: #6c5cbd30;
+  color: #6c5cbd;
+  padding: 10px;
+}
+
+.user-board-score span {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.user-board-score p {
+  margin: 0;
+  color: gray;
+  font-size: 14px;
+  margin-top: -5px;
+}
+
+/*
+  options Progress Bar
+*/
+
+.option-progress-bar {
+  margin-top: 23px;
+  padding-top: 14px;
+}
+
+.option-progress-bar .overlay {
+  position: absolute;
+  background: #6C5CBC;
+  height: 6px;
+  width: 63%;
+  left: 0;
+  top: 0;
+  color: #fff;
+}
+
+.option-progress-bar .percent {
+  position: absolute;
+  top: -18px;
+  background: #6c5cbd;
+  font-weight: bold;
+  padding: 4px;
+  font-size: 13px;
+  border-radius: 5px;
+  left: 0;
+  margin: 0;
+  color: #fff;
+}
+
+.option-progress-bar .option-info .option-text {
+  margin-left: 15px;
+}
+
+/*
+  Mini-Framwork
+*/
+
+.main-color {
+  color: #6D5CBD
+}
+
+.active-route {
+  color: #6D5CBD;
+  position: relative;
+}
+
+.active-route:after {
+  content: '';
+  display: block;
+  background: #6c5cbd;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  bottom: -7px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  width: 100%;
+  border: 0;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 12px;
+  cursor: pointer;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, .12);
+  color: #fff;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.main-btn {
+  display: inline-block;
+  background-color: #6D5CBD;
+}
+
+.main-btn:hover {
+  background-color: #5e4abb;
+}
+
+.btn-submit {
+  font-size: 14px;
+  background-color: #1dd1a1;
+}
+
+.btn-submit:hover {
+  background-color: #10ac84;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 16px;
+}
+
+.box-shadow {
+  box-shadow: 0px 0px 9px 0px rgba(6, 6, 6, 0.35);
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.text-secondary {
+  font-size: 12px;
+  color: #525151;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.divider {
+  border: 1px solid #00000024;
+}
