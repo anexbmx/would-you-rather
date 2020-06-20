@@ -12,7 +12,6 @@ import NewQuestion from './NewQuestion';
 import LoadingBar from 'react-redux-loading';
 import LeaderBoard from './LeaderBoard';
 
-import PageNotFound from './PageNotFound';
 
 class App extends React.Component {
 

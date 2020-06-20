@@ -12,7 +12,7 @@ const styleImg = {
 const PageNotFound = () => (
     <div>
         <h2 color="#fff" className="text-center">Page not found</h2>
-        <img style={styleImg} src={notFoundImg} />
+        <img alt="not found" style={styleImg} src={notFoundImg} />
     </div>
 )
 
